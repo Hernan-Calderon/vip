@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contacto</title>
+  <script src="./vista/js/contacto.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <img class="responsive-img" src="./vista/images/contacto.gif">
+
+    <div class="section">
+      <h3 class="indigo-text text-accent-4">CONTACTO</h3>
+      <p>Agenda tu Cita - Escríbenos 314 310 5560. Déjanos tu Mensaje ...</p>
+    </div>
+
+    <div class="section">
+      <div class="row">
+
+        <div class="col s12 l4">
+          <div class="card light-blue darken-4">
+            <div class="card-content white-text">
+              <span class="card-title"><b>Horario de atención</b></span>
+              <p>Lunes a Viernes:</p>
+              <p>8:00 am - 12:00 m</p>
+              <p>2:00 pm - 6:00 pm</p>
+              <div class="divider"></div>
+              <p>Sabados:</p>
+              <p>8:00 am - 12:00 m</p>
+              <div class="divider"></div>
+              <p><i class="material-icons">home</i>&nbsp;Calle 8 # 9-26 Barrio La Estrella</p>
+              <div class="divider"></div>
+              <p><i class="material-icons">call</i>&nbsp;+57 314 3105560</p>
+              <div class="divider"></div>
+              <p><i class="material-icons">email</i>&nbsp;lilianarestrepo11@gmail.com</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.facebook.com/pages/category/General-Dentist/Tu-sonrisa-VIP-104711994554766/"><img
+                  src="./vista/images/logo-facebook-blanco.png" height="36"></a>
+              <a
+                href="https://www.instagram.com/dralilianarestrepo/?fbclid=IwAR1d-4nRcLQGDwgKDdjNVmVeJqh4MH_TbNEsE47d2IlkEzeA262kAQgtgH4"><img
+                  src="./vista/images/logo-instagram-blanco.png" height="36"></a>
+              <a href="https://wa.me/573143105560?text=Me%20interesa%20el%20servicio"><img
+                  src="./vista/images/logo-whatsapp-blanco.png" height="36"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12  l8">
+          <div class="video-container">
+            <iframe width="600" height="450"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.1199405810926!2d-75.60871750508699!3d1.6117189617629566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e244e11b6033d1d%3A0x99f3ad59da9a8e3c!2sCl.%208%20%239-26%2C%20Florencia%2C%20Caquet%C3%A1!5e0!3m2!1ses-419!2sco!4v1628452437517!5m2!1ses-419!2sco"
+              frameborder="0" loading="lazy" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h5 class="indigo-text text-accent-4">Escríbenos tu mensaje:</h5>
+      <div class="row">
+        <form class="col s12 l12" method="POST" action="./servicios/varios/enviarMail.php">
+
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="nombre" type="text" name="nombre" class="validate" required>
+              <label for="nombre">Nombre</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">phone</i>
+              <input id="telefono" type="text" name="telefono" class="validate" required>
+              <label for="telefono">Teléfono</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mail</i>
+              <input id="email" type="email" name="email" class="validate" required>
+              <label for="email">Correo Electrónico</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="mensaje" name="mensaje" class="materialize-textarea" required></textarea>
+              <label for="mensaje">Mensaje</label>
+            </div>
+          </div>
+
+          <p>Acepto la política de privacidad.</p>
+
+          <button class="btn waves-effect waves-light  indigo accent-4" type="submit" name="enviar">Enviar
+            <i class="material-icons right">send</i>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
